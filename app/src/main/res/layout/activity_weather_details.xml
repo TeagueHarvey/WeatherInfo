@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/landscape">
+
+    <TextView
+        android:id="@+id/tvCityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/budapest"
+        android:textSize="46sp"
+        android:textStyle="bold"
+        android:layout_marginTop="139dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"/>
+
+    <TextView
+        android:id="@+id/tvTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:text="@string/_20"
+        android:textSize="52sp"
+        android:layout_below="@+id/tvCityName"
+        android:layout_toRightOf="@+id/ivIcon"
+        android:layout_toEndOf="@+id/ivIcon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:text="@string/c"
+        android:textSize="42sp"
+        android:id="@+id/tvC"
+        android:layout_alignBottom="@+id/ivIcon"
+        android:layout_toRightOf="@+id/tvTemp"
+        android:layout_toEndOf="@+id/tvTemp" />
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="fitXY"
+        android:textColor="#ffffff"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginLeft="117dp"
+        android:layout_marginStart="117dp"
+        android:layout_below="@+id/tvCityName" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:text="@string/tvDesc"
+        android:layout_below="@+id/tvTemp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvTempMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvTempMax"
+        android:textSize="20sp"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:layout_alignTop="@+id/tvC"
+        android:layout_toRightOf="@+id/tvC"
+        android:layout_toEndOf="@+id/tvC" />
+
+    <TextView
+        android:id="@+id/tvTempMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvTempMin"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:textSize="20sp"
+        android:layout_below="@+id/tvTempMax"
+        android:layout_toRightOf="@+id/tvC"
+        android:layout_toEndOf="@+id/tvC" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/humidity"
+        android:layout_marginTop="40dp"
+        android:id="@+id/ivHumidity"
+        android:layout_below="@+id/tvTemp"
+        android:layout_toLeftOf="@+id/tvHumidity"
+        android:layout_toStartOf="@+id/tvHumidity" />
+
+    <TextView
+        android:id="@+id/tvHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:text="@string/tvHumidity"
+        android:textSize="26sp"
+        android:layout_alignTop="@+id/ivHumidity"
+        android:layout_alignLeft="@+id/ivIcon"
+        android:layout_alignStart="@+id/ivIcon"
+        android:layout_marginTop="10dp"/>
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/wind"
+        android:id="@+id/ivWind"
+        android:layout_alignTop="@+id/ivHumidity"
+        android:layout_toLeftOf="@+id/tvTempMin"
+        android:layout_toStartOf="@+id/tvTempMin" />
+
+    <TextView
+        android:id="@+id/tvWind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:text="@string/tvWind"
+        android:textSize="26sp"
+        android:layout_alignBaseline="@+id/tvHumidity"
+        android:layout_alignBottom="@+id/tvHumidity"
+        android:layout_toRightOf="@+id/ivWind"
+        android:layout_toEndOf="@+id/ivWind" />
+
+
+</RelativeLayout>
